@@ -4,3 +4,5 @@ The way to run my program is to run car_main_driver.py or bank_main_driver.py de
 
 However these print outs aren't styled or formatted in any way so there is also a PDF is in this file titled HW1_Data.pdf that has the tables of each dataset with respect to depth, metrics etc.
 
+The written homework is titled HW1_Written.pdf
+
