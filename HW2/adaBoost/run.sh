@@ -1,0 +1,1 @@
+python3 bank.py 1
