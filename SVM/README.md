@@ -4,4 +4,4 @@ SVM only needs one parameter to run, a value 1-4
 3 is the dual form 
 4 is the gaussian
 EG
-python svmMain 1
+python svmMain.py 1
