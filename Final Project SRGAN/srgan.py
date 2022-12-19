@@ -1,5 +1,6 @@
 """
 Had to fix an issue where the program didn't contain a main function
+https://paperswithcode.com/method/srgan
 """
 
 import numpy as np
