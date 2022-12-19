@@ -9,7 +9,6 @@ indistinguishable from the original input distribution.
 
 
 
-Created on Fri Dec 16 15:16:53 2022
 Sources
 https://paperswithcode.com/method/srgan
 """
