@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 Created on Fri Dec 16 15:18:47 2022
-
+https://paperswithcode.com/method/srgan
 @author: Felix
 """
 import glob
