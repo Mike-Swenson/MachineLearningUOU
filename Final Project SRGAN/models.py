@@ -1,8 +1,17 @@
 # -*- coding: utf-8 -*-
 """
+The basis of a GAN is pitting two neural networks against each other in a two player game in which the generator 
+is trained using real data and its goal is to produce data as close to the input as possible.  
+The discriminator is then fed a shuffled mix of output data from the generator and real data. 
+The discriminator tries to decipher which is real and which is artificial data.  
+This competition drives the loss for each system and ideally generates data that is 
+indistinguishable from the original input distribution.
+
+
+
 Created on Fri Dec 16 15:16:53 2022
+Sources
 https://paperswithcode.com/method/srgan
-@author: Felix
 """
 import torch.nn as nn
 import torch.nn.functional as F
