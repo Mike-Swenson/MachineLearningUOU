@@ -1,0 +1,38 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Dec 19 02:15:00 2022
+
+@author: Felix
+"""
+import matplotlib.pyplot as plt
+import numpy as np
+
+string = "[Epoch 0/100] [Batch 477/478] [D loss: 0.618905] [G loss: 0.953433][Epoch 1/100] [Batch 477/478] [D loss: 1.083674] [G loss: 1.063549][Epoch 2/100] [Batch 477/478] [D loss: 1.449429] [G loss: 0.812211][Epoch 3/100] [Batch 477/478] [D loss: 2.027140] [G loss: 0.758572][Epoch 4/100] [Batch 477/478] [D loss: 0.944661] [G loss: 0.716699][Epoch 5/100] [Batch 477/478] [D loss: 0.438726] [G loss: 0.543024][Epoch 6/100] [Batch 477/478] [D loss: 0.410079] [G loss: 0.608094][Epoch 7/100] [Batch 477/478] [D loss: 0.647799] [G loss: 0.554536][Epoch 8/100] [Batch 477/478] [D loss: 0.507383] [G loss: 0.549624][Epoch 9/100] [Batch 477/478] [D loss: 0.423483] [G loss: 0.709074][Epoch 10/100] [Batch 477/478] [D loss: 0.341842] [G loss: 0.605351][Epoch 11/100] [Batch 477/478] [D loss: 0.386588] [G loss: 0.550194][Epoch 12/100] [Batch 477/478] [D loss: 0.361991] [G loss: 0.483069][Epoch 13/100] [Batch 477/478] [D loss: 0.352790] [G loss: 0.669332][Epoch 14/100] [Batch 477/478] [D loss: 0.379397] [G loss: 0.655715][Epoch 15/100] [Batch 477/478] [D loss: 0.302246] [G loss: 0.812491][Epoch 16/100] [Batch 477/478] [D loss: 0.298795] [G loss: 0.610077][Epoch 17/100] [Batch 477/478] [D loss: 0.295990] [G loss: 0.725034][Epoch 18/100] [Batch 477/478] [D loss: 0.259421] [G loss: 0.605454][Epoch 19/100] [Batch 477/478] [D loss: 0.259625] [G loss: 0.697985][Epoch 20/100] [Batch 477/478] [D loss: 0.274831] [G loss: 0.492855][Epoch 21/100] [Batch 477/478] [D loss: 0.266915] [G loss: 0.619825][Epoch 22/100] [Batch 477/478] [D loss: 0.275769] [G loss: 0.627041][Epoch 23/100] [Batch 477/478] [D loss: 0.238359] [G loss: 0.457554][Epoch 24/100] [Batch 477/478] [D loss: 0.229680] [G loss: 0.529498][Epoch 25/100] [Batch 477/478] [D loss: 0.273651] [G loss: 0.497688][Epoch 26/100] [Batch 477/478] [D loss: 0.226113] [G loss: 0.576940][Epoch 27/100] [Batch 477/478] [D loss: 0.196469] [G loss: 0.594306][Epoch 28/100] [Batch 477/478] [D loss: 0.249589] [G loss: 0.548124][Epoch 29/100] [Batch 477/478] [D loss: 0.231875] [G loss: 0.586000][Epoch 30/100] [Batch 477/478] [D loss: 0.195587] [G loss: 0.489761][Epoch 31/100] [Batch 477/478] [D loss: 0.243338] [G loss: 0.457480][Epoch 32/100] [Batch 477/478] [D loss: 0.243082] [G loss: 0.556504][Epoch 33/100] [Batch 477/478] [D loss: 0.160122] [G loss: 0.528454][Epoch 34/100] [Batch 477/478] [D loss: 0.201283] [G loss: 0.501590][Epoch 35/100] [Batch 477/478] [D loss: 0.240936] [G loss: 0.611676][Epoch 36/100] [Batch 477/478] [D loss: 0.200036] [G loss: 0.639786][Epoch 37/100] [Batch 477/478] [D loss: 0.242620] [G loss: 0.617013][Epoch 38/100] [Batch 477/478] [D loss: 0.186027] [G loss: 0.505755][Epoch 39/100] [Batch 477/478] [D loss: 0.196477] [G loss: 0.641900][Epoch 40/100] [Batch 477/478] [D loss: 0.176451] [G loss: 0.504911][Epoch 41/100] [Batch 477/478] [D loss: 0.187985] [G loss: 0.507525][Epoch 42/100] [Batch 477/478] [D loss: 0.197603] [G loss: 0.609761][Epoch 43/100] [Batch 477/478] [D loss: 0.168856] [G loss: 0.486997][Epoch 44/100] [Batch 477/478] [D loss: 0.230213] [G loss: 0.502048][Epoch 45/100] [Batch 477/478] [D loss: 0.199001] [G loss: 0.552518][Epoch 46/100] [Batch 477/478] [D loss: 0.220502] [G loss: 0.548638][Epoch 47/100] [Batch 477/478] [D loss: 0.228856] [G loss: 0.507797][Epoch 48/100] [Batch 477/478] [D loss: 0.211572] [G loss: 0.506811][Epoch 49/100] [Batch 477/478] [D loss: 0.251748] [G loss: 0.590844][Epoch 50/100] [Batch 477/478] [D loss: 0.329742] [G loss: 0.596130][Epoch 51/100] [Batch 477/478] [D loss: 0.253727] [G loss: 0.585272][Epoch 52/100] [Batch 477/478] [D loss: 0.234565] [G loss: 0.654712][Epoch 53/100] [Batch 477/478] [D loss: 0.146691] [G loss: 0.523309][Epoch 54/100] [Batch 477/478] [D loss: 0.140058] [G loss: 0.462401][Epoch 55/100] [Batch 477/478] [D loss: 0.124527] [G loss: 0.410170][Epoch 56/100] [Batch 477/478] [D loss: 0.176302] [G loss: 0.548752][Epoch 57/100] [Batch 477/478] [D loss: 0.139092] [G loss: 0.590418][Epoch 58/100] [Batch 477/478] [D loss: 0.118273] [G loss: 0.535820][Epoch 59/100] [Batch 477/478] [D loss: 0.105312] [G loss: 0.667821][Epoch 60/100] [Batch 477/478] [D loss: 0.114648] [G loss: 0.530562][Epoch 61/100] [Batch 477/478] [D loss: 0.054451] [G loss: 0.475384][Epoch 62/100] [Batch 477/478] [D loss: 0.055323] [G loss: 0.564128][Epoch 63/100] [Batch 477/478] [D loss: 0.054533] [G loss: 0.508301][Epoch 64/100] [Batch 477/478] [D loss: 0.071464] [G loss: 0.516472][Epoch 65/100] [Batch 477/478] [D loss: 0.051815] [G loss: 0.514441][Epoch 66/100] [Batch 477/478] [D loss: 0.067759] [G loss: 0.662851][Epoch 67/100] [Batch 477/478] [D loss: 0.053059] [G loss: 0.550719][Epoch 68/100] [Batch 477/478] [D loss: 0.066387] [G loss: 0.499409][Epoch 69/100] [Batch 477/478] [D loss: 0.120115] [G loss: 0.535753][Epoch 70/100] [Batch 477/478] [D loss: 0.076504] [G loss: 0.514649][Epoch 71/100] [Batch 477/478] [D loss: 0.112848] [G loss: 0.507272][Epoch 72/100] [Batch 477/478] [D loss: 0.138148] [G loss: 0.609599][Epoch 73/100] [Batch 477/478] [D loss: 0.138138] [G loss: 0.531233][Epoch 74/100] [Batch 477/478] [D loss: 0.254866] [G loss: 0.647671][Epoch 75/100] [Batch 477/478] [D loss: 0.062071] [G loss: 0.515236][Epoch 76/100] [Batch 477/478] [D loss: 0.043732] [G loss: 0.498445][Epoch 77/100] [Batch 477/478] [D loss: 0.071511] [G loss: 0.483278][Epoch 78/100] [Batch 477/478] [D loss: 0.053995] [G loss: 0.557528][Epoch 79/100] [Batch 477/478] [D loss: 0.043363] [G loss: 0.551825][Epoch 80/100] [Batch 477/478] [D loss: 0.048309] [G loss: 0.552841][Epoch 81/100] [Batch 477/478] [D loss: 0.056636] [G loss: 0.512754][Epoch 82/100] [Batch 477/478] [D loss: 0.031439] [G loss: 0.527178][Epoch 83/100] [Batch 477/478] [D loss: 0.057013] [G loss: 0.426807][Epoch 84/100] [Batch 477/478] [D loss: 0.043106] [G loss: 0.531212][Epoch 85/100] [Batch 477/478] [D loss: 0.243075] [G loss: 0.494609][Epoch 86/100] [Batch 477/478] [D loss: 0.646078] [G loss: 0.543523][Epoch 87/100] [Batch 477/478] [D loss: 0.410535] [G loss: 0.472613][Epoch 88/100] [Batch 477/478] [D loss: 0.214331] [G loss: 0.420336][Epoch 89/100] [Batch 477/478] [D loss: 0.271424] [G loss: 0.542683][Epoch 90/100] [Batch 477/478] [D loss: 0.232927] [G loss: 0.504274][Epoch 91/100] [Batch 477/478] [D loss: 0.366512] [G loss: 0.526290][Epoch 92/100] [Batch 477/478] [D loss: 0.206889] [G loss: 0.540894][Epoch 93/100] [Batch 477/478] [D loss: 0.109097] [G loss: 0.549602][Epoch 94/100] [Batch 477/478] [D loss: 0.153157] [G loss: 0.502241][Epoch 95/100] [Batch 477/478] [D loss: 0.136459] [G loss: 0.549506][Epoch 96/100] [Batch 477/478] [D loss: 0.122511] [G loss: 0.518461][Epoch 97/100] [Batch 477/478] [D loss: 0.131818] [G loss: 0.543910][Epoch 98/100] [Batch 477/478] [D loss: 0.158211] [G loss: 0.564783][Epoch 99/100] [Batch 477/478] [D loss: 0.179761] [G loss: 0.690434]"
+
+GLoss = []
+DLoss = []
+for i, char in enumerate(string):
+    j = i
+    if char == "D":
+        tempString = ""
+        while string[j] != "]":
+            if string[j].isdigit() or string[j] == ".":
+                tempString = tempString + string[j]
+            j += 1
+        DLoss.append(float(tempString))
+    if char == "G":
+        tempString = ""
+        while string[j] != "]":
+            if string[j].isdigit() or string[j] == ".":
+                tempString = tempString + string[j]
+            j += 1
+        GLoss.append(float(tempString))
+plt.xlim(0, 100)
+
+
+plt.plot(range(len(GLoss)), GLoss, label="Generator Loss")
+plt.plot(range(len(DLoss)), DLoss, label="Discriminator Loss")
+
+plt.legend()
+
+plt.show()
