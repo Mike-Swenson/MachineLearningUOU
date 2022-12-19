@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 Created on Fri Dec 16 15:16:53 2022
-
+https://paperswithcode.com/method/srgan
 @author: Felix
 """
 import torch.nn as nn
